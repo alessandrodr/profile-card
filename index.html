@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<head>
+    <html lang="en"></html>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+                /* 
+        - Mobile: 375px
+        - Desktop: 1440px
+
+        ## Colors
+        ### Primary
+        Dark cyan: hsl(185, 75%, 39%)
+        Very dark desaturated blue: hsl(229, 23%, 23%)
+        Dark grayish blue: hsl(227, 10%, 46%)
+
+        ### Neutral
+        Dark gray: hsl(0, 0%, 59%)
+
+        ## Typography
+        ### Body Copy
+        - Font size (name and stats): 18px
+
+        ### Font
+        - Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
+        - Weights: 400, 700 */
+        * {
+            margin: o;
+            padding: 0;
+        }
+        body {
+            min-height: 100vh;
+            background-image: url(bg-pattern-top.svg), url(bg-pattern-bottom.svg);
+            background-color: hsl(185, 75%, 39%);
+            background-repeat: no-repeat, no-repeat;
+            background-position: right 48vw bottom 40vh, left 48vw top 40vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Kumbh Sans', sans-serif;
+            font-size: 13px;
+        }
+        .bg-white {
+            background-color: white;
+        }
+        .relative {
+            position: relative;
+        }
+        .flex {
+            display: flex;
+            justify-content: center;
+        }
+        .img-border {
+            border-radius: 100px; 
+            border: solid white 10px;
+        }
+        p {
+            position: relative;
+            top: -15px;
+            color: hsl(0, 0%, 59%);
+            font-size: 13px;
+        }
+        #container{
+            width: 350px;
+            max-height: 400px;
+            margin-top: 50px;
+            margin-left: 12px;
+            margin-right: 12px;
+            margin-bottom: 50px;
+        }
+        
+        h4 {
+            color: hsl(0, 0%, 59%);
+            position: relative;
+            top: -10px;
+        }
+        .dark-grey {
+            color: hsl(0, 0%, 59%);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="container" class="bg-white" style="border-radius: 20px; overflow: hidden;">
+        <div id="wrapper" style="text-align: center;">
+            <img src="bg-pattern-card.svg" alt="" >
+            <div class="flex relative" style=" top: -50px;">
+                <img src="image-victor.jpg" class="img-border" alt="">     
+            </div>
+            <div class="relative" style="top: -50px;">
+                <h1>Victor Crest <span class="dark-grey" style="font-weight: normal;">  26</span></h1>
+                <h4 style="font-weight: 400;">London<h4>
+            </div>
+
+            <div class="flex relative" style="top:-40px; text-align: center; justify-content: space-around; padding-left: 25px; padding-right: 25px;">
+                <div>
+                    <h2>80K</h2>
+                    <p>Followers</p>
+                </div>
+                <div>
+                    <h2>803K</h2>
+                    <p>Likes</p>
+                </div>
+                <div>
+                    <h2>1.4K</h2>
+                    <p>Photos</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
+
+
