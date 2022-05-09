@@ -1,6 +1,7 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <html lang="en"></html>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -57,37 +58,43 @@
         }
         .img-border {
             border-radius: 100px; 
-            border: solid white 10px;
+            border: solid white 7px;
+        }
+        h1 {
+            font-size: 18px;
+            color: darkslategrey;
         }
         p {
             position: relative;
-            top: -15px;
+            top: -10px;
             color: hsl(0, 0%, 59%);
             font-size: 13px;
         }
         #container{
             width: 350px;
-            max-height: 400px;
+            max-height: 380px;
             margin-top: 50px;
             margin-left: 12px;
             margin-right: 12px;
             margin-bottom: 50px;
         }
         
-        h4 {
-            color: hsl(0, 0%, 59%);
-            position: relative;
-            top: -10px;
-        }
         .dark-grey {
             color: hsl(0, 0%, 59%);
         }
+        #stats {
+            top:-40px; text-align: center; justify-content: space-around; padding-left: 25px; padding-right: 25px;
+        }
+        .border {
+            border-radius: 20px; overflow: hidden;
+        }
+   
 
 
     </style>
 </head>
 <body>
-    <div id="container" class="bg-white" style="border-radius: 20px; overflow: hidden;">
+    <main id="container" class="bg-white border">
         <div id="wrapper" style="text-align: center;">
             <img src="bg-pattern-card.svg" alt="" >
             <div class="flex relative" style=" top: -50px;">
@@ -95,26 +102,26 @@
             </div>
             <div class="relative" style="top: -50px;">
                 <h1>Victor Crest <span class="dark-grey" style="font-weight: normal;">  26</span></h1>
-                <h4 style="font-weight: 400;">London<h4>
+                <p style="font-weight: 400;">London<p>
             </div>
 
-            <div class="flex relative" style="top:-40px; text-align: center; justify-content: space-around; padding-left: 25px; padding-right: 25px;">
+            <div id="stats" class="flex relative">
                 <div>
-                    <h2>80K</h2>
+                    <h1>80K</h1>
                     <p>Followers</p>
                 </div>
                 <div>
-                    <h2>803K</h2>
-                    <p>Likes</p>
+                    <h1>803K</h1>
+                    <p>Likes</p>    
                 </div>
                 <div>
-                    <h2>1.4K</h2>
+                    <h1>1.4K</h1>
                     <p>Photos</p>
                 </div>
             </div>
 
         </div>
-    </div>
+    </main>
 </body>
 </html>
 
